@@ -15,7 +15,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 @Component
-public class GeradorEpubImplComEpubLib implements GeradorEbook {
+public class GeradorEpub implements GeradorEbook {
 
     @Override
     public void gera(Ebook ebook) {
