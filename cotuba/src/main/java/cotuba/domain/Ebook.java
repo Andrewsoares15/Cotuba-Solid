@@ -4,15 +4,15 @@ import java.nio.file.Path;
 import java.util.List;
 
 public class Ebook {
-    private String formato;
+    private FormatosEbook formato;
     private Path path;
     private List<Capitulo> capitulos;
 
-    public String getFormato() {
+    public FormatosEbook getFormato() {
         return formato;
     }
 
-    public void setFormato(String formato) {
+    public void setFormato(FormatosEbook formato) {
         this.formato = formato;
     }
 
@@ -38,7 +38,7 @@ public class Ebook {
                 .equals(capitulo);
     }
 
-    public Ebook(String formato, Path path, List<Capitulo> capitulos){
+    public Ebook(FormatosEbook formato, Path path, List<Capitulo> capitulos){
         this.formato = formato;
         this.path = path;
         this.capitulos = capitulos;

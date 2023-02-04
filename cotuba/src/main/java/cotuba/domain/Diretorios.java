@@ -4,7 +4,7 @@ import java.nio.file.Path;
 
 public class Diretorios {
     private Path diretorioDosMD;
-    private String formato;
+    private FormatosEbook formato;
     private Path arquivoDeSaida;
 
     public Path getDiretorioDosMD() {
@@ -15,11 +15,11 @@ public class Diretorios {
         this.diretorioDosMD = diretorioDosMD;
     }
 
-    public String getFormato() {
+    public FormatosEbook getFormato() {
         return formato;
     }
 
-    public void setFormato(String formato) {
+    public void setFormato(FormatosEbook formato) {
         this.formato = formato;
     }
 
