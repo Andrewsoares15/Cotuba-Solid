@@ -57,7 +57,9 @@ class LeitorOpcoesCLI {
     }
 
     private void trataFormato(CommandLine cmd) {
-        FormatosEbook nomeDoFormatoDoEbook = FormatosEbook.valueOf(cmd.getOptionValue("format"));
+        String format = cmd.getOptionValue("format");
+
+        FormatosEbook nomeDoFormatoDoEbook = format != null ? FormatosEbook.valueOf(format.toUpperCase()) : FormatosEbook.PDF;
 
         if (nomeDoFormatoDoEbook != null) {
             diretorios.setFormato(nomeDoFormatoDoEbook);

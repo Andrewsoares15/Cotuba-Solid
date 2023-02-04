@@ -2,12 +2,14 @@ package cotuba.domain;
 
 import cotuba.application.GeradorEbook;
 import cotuba.epub.GeradorEpub;
+import cotuba.html.GeradorHtml;
 import cotuba.pdf.GeradorPdf;
 
 public enum FormatosEbook {
 
     PDF(new GeradorPdf()),
-    EPUB(new GeradorEpub());
+    EPUB(new GeradorEpub()),
+    HTML(new GeradorHtml());
 
     private GeradorEbook gerador;
 
